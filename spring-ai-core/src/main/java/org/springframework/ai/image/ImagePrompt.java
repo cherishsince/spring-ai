@@ -22,6 +22,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * 图片内容
+ */
 public class ImagePrompt implements ModelRequest<List<ImageMessage>> {
 
 	private final List<ImageMessage> messages;

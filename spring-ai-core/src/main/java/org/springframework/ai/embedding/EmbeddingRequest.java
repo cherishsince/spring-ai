@@ -21,6 +21,8 @@ import java.util.List;
 import org.springframework.ai.model.ModelRequest;
 
 /**
+ * 翻译是 植入/嵌入请求 暂不知
+ *
  * @author Christian Tzolov
  */
 public class EmbeddingRequest implements ModelRequest<List<String>> {

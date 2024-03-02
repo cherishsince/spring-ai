@@ -25,6 +25,9 @@ import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
+/**
+ * 文字内容
+ */
 public class Prompt implements ModelRequest<List<Message>> {
 
 	private final List<Message> messages;
