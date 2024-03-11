@@ -23,6 +23,8 @@ import org.springframework.util.CollectionUtils;
 import org.springframework.ai.chat.metadata.ChatResponseMetadata;
 
 /**
+ * 人工智能提供商返回的聊天完成（例如生成）响应。
+ *
  * The chat completion (e.g. generation) response returned by an AI provider.
  */
 public class ChatResponse implements ModelResponse<Generation> {

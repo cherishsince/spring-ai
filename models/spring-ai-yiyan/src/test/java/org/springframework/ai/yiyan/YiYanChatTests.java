@@ -22,8 +22,8 @@ public class YiYanChatTests {
     @Before
     public void setup() {
         YiYanApi yiYanApi = new YiYanApi(
-                "",
-                "",
+                "x0cuLZ7XsaTCU08vuJWO87Lg",
+                "R9mYF9dl9KASgi5RUq0FQt3wRisSnOcK",
                 YiYanChatModel.ERNIE4_3_5_8K,
                 86400
         );

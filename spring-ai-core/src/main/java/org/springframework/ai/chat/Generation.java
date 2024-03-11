@@ -25,6 +25,8 @@ import org.springframework.ai.chat.messages.AssistantMessage;
 import org.springframework.lang.Nullable;
 
 /**
+ * 表示AI返回的响应。
+ *
  * Represents a response returned by the AI.
  */
 public class Generation implements ModelResult<AssistantMessage> {

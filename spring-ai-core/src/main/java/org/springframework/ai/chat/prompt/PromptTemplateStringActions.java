@@ -2,6 +2,9 @@ package org.springframework.ai.chat.prompt;
 
 import java.util.Map;
 
+/**
+ * 提示次模板字符串操作
+ */
 public interface PromptTemplateStringActions {
 
 	String render();

@@ -19,6 +19,10 @@ package org.springframework.ai.chat.messages;
 import java.util.Map;
 
 /**
+ * 让生成人员知道内容是作为对用户的响应生成的。
+ * 此角色指示生成者先前在会话中生成的消息。
+ * 通过包括该系列中的辅助消息，您可以为生成的关于提供上下文之前在谈话中的交流。
+ *
  * Lets the generative know the content was generated as a response to the user. This role
  * indicates messages that the generative has previously generated in the conversation. By
  * including assistant messages in the series, you provide context to the generative about

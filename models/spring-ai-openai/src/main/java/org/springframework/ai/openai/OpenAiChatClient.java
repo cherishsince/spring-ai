@@ -69,6 +69,7 @@ import org.springframework.util.CollectionUtils;
  * @see StreamingChatClient
  * @see OpenAiApi
  */
+
 public class OpenAiChatClient extends
 		AbstractFunctionCallSupport<ChatCompletionMessage, OpenAiApi.ChatCompletionRequest, ResponseEntity<ChatCompletion>>
 		implements ChatClient, StreamingChatClient {
@@ -86,7 +87,7 @@ public class OpenAiChatClient extends
 	public final RetryTemplate retryTemplate = RetryTemplate.builder()
 		.maxAttempts(10)
 		.retryOn(OpenAiApiException.class)
-		.exponentialBackoff(Duration.ofMillis(2000), 5, Duration.ofMillis(3 * 60000))
+		.exponentialBackoff(Duration.ofMillis(3000), 5, Duration.ofMillis(3 * 60000))
 		.withListener(new RetryListener() {
 			@Override
 			public <T extends Object, E extends Throwable> void onError(RetryContext context,

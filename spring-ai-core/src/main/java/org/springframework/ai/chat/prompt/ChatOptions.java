@@ -19,6 +19,8 @@ package org.springframework.ai.chat.prompt;
 import org.springframework.ai.model.ModelOptions;
 
 /**
+ * 聊天选项代表了常见的选项，可在不同的聊天模式中移植。
+ *
  * The ChatOptions represent the common options, portable across different chat models.
  */
 public interface ChatOptions extends ModelOptions {

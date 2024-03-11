@@ -18,8 +18,15 @@ package org.springframework.ai.chat.prompt;
 
 import java.util.Map;
 
+/**
+ * 提示词模板操作
+ */
 public interface PromptTemplateActions extends PromptTemplateStringActions {
 
+	/**
+	 * 创建 Prompt
+	 * @return
+	 */
 	Prompt create();
 
 	Prompt create(Map<String, Object> model);

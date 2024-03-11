@@ -17,6 +17,8 @@
 package org.springframework.ai.chat.metadata;
 
 /**
+ * 抽象数据类型（ADT）封装关于人工智能提供商API使用的元数据根据AI请求。
+ *
  * Abstract Data Type (ADT) encapsulating metadata on the usage of an AI provider's API
  * per AI request.
  *
@@ -26,6 +28,9 @@ package org.springframework.ai.chat.metadata;
 public interface Usage {
 
 	/**
+	 * 返回AI请求的｛@literal prompt｝中使用的令牌数。
+	 * @返回一个｛@link Long｝，其中包含在的｛@literal提示符｝中使用的令牌数AI请求。
+	 *
 	 * Returns the number of tokens used in the {@literal prompt} of the AI request.
 	 * @return an {@link Long} with the number of tokens used in the {@literal prompt} of
 	 * the AI request.

@@ -21,6 +21,9 @@ import java.util.List;
 import org.springframework.core.io.Resource;
 
 /**
+ * 作为输入传递的“user”类型的消息具有用户角色的消息来自最终用户或开发者。
+ * 它们表示问题、提示或您想要的任何输入产生反应的。
+ *
  * A message of the type 'user' passed as input Messages with the user role are from the
  * end-user or developer. They represent questions, prompts, or any input that you want
  * the generative to respond to.

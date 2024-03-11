@@ -22,6 +22,8 @@ import org.springframework.ai.model.ResponseMetadata;
  * Abstract Data Type (ADT) modeling common AI provider metadata returned in an AI
  * response.
  *
+ * 抽象数据类型（ADT）建模AI响应中返回的常见AI提供者元数据。
+ *
  * @author John Blum
  * @since 0.7.0
  */

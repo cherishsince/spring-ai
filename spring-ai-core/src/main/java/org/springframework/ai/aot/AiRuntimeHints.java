@@ -14,6 +14,8 @@ import java.util.*;
 import java.util.stream.Collectors;
 
 /**
+ * 本机运行时提示。有关其他模块各自的本机运行时提示，请参阅这些模块。
+ *
  * Native runtime hints. See other modules for their respective native runtime hints.
  *
  * @author Josh Long

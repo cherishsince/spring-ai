@@ -23,6 +23,8 @@ import java.util.List;
 import java.util.Map;
 
 /**
+ * PromptTemplate，用于将角色指定为字符串实现及其角色不足以满足您的需求。
+ *
  * A PromptTemplate that lets you specify the role as a string should the current
  * implementations and their roles not suffice for your needs.
  */

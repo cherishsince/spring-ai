@@ -669,6 +669,11 @@ public class OpenAiApi {
 	}
 
 	/**
+	 * 为给定的聊天会话创建一个模型响应。
+	 *
+	 * chatRequest聊天完成请求。
+	 * @return实体响应，以{@link ChatCompletion}为主体，HTTP状态码和头。
+	 *
 	 * Creates a model response for the given chat conversation.
 	 *
 	 * @param chatRequest The chat completion request.

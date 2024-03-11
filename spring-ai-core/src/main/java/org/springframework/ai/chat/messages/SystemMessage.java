@@ -19,6 +19,10 @@ package org.springframework.ai.chat.messages;
 import org.springframework.core.io.Resource;
 
 /**
+ * 作为输入传递的“system”类型的消息。系统消息给出高级别对话说明。
+ * 此角色通常提供高级说明对话。
+ * 例如，您可以使用系统消息来指示具有生成性，表现得像某个角色或以特定的方式提供答案总体安排
+ *
  * A message of the type 'system' passed as input. The system message gives high level
  * instructions for the conversation. This role typically provides high-level instructions
  * for the conversation. For example, you might use a system message to instruct the

@@ -17,6 +17,9 @@
 package org.springframework.ai.model;
 
 /**
+ * 表示与AI模型的响应相关联的元数据的接口。此接口 旨在提供有关人工智能生成反应的附加信息 模型，包括处理细节和模型特定数据。它是一种价值
+ * 核心领域内的对象，增强对人工智能模型的理解和管理 在各种应用中的响应。
+ *
  * Interface representing metadata associated with an AI model's response. This interface
  * is designed to provide additional information about the generative response from an AI
  * model, including processing details and model-specific data. It serves as a value

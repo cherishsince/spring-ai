@@ -25,6 +25,8 @@ import org.springframework.lang.Nullable;
 import static org.springframework.ai.aot.AiRuntimeHints.findJsonAnnotatedClassesInPackage;
 
 /**
+ * OpenAiRuntimeHints类负责为OpenAI注册运行时提示API类。
+ *
  * The OpenAiRuntimeHints class is responsible for registering runtime hints for OpenAI
  * API classes.
  *

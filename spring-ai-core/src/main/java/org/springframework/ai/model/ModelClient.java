@@ -35,6 +35,6 @@ public interface ModelClient<TReq extends ModelRequest<?>, TRes extends ModelRes
 	 * @param request the request object to be sent to the AI model
 	 * @return the response from the AI model
 	 */
-	TRes call(TReq request);
+	TRes call(TReq request) throws Throwable;
 
 }

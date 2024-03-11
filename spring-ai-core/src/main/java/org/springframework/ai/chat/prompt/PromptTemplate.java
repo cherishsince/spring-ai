@@ -34,6 +34,11 @@ import java.util.Map.Entry;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * 用户输入的提示内容模板
+ *
+ * 实现：提示词模板操作 提示词模板message相关操作
+ */
 public class PromptTemplate implements PromptTemplateActions, PromptTemplateMessageActions {
 
 	private ST st;
