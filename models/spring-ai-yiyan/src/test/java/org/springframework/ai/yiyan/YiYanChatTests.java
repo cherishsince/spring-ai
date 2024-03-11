@@ -24,6 +24,7 @@ public class YiYanChatTests {
         YiYanApi yiYanApi = new YiYanApi(
                 "",
                 "",
+                YiYanChatModel.ERNIE4_3_5_8K,
                 86400
         );
         yiYanChatClient = new YiYanChatClient(yiYanApi);

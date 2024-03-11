@@ -34,10 +34,13 @@ public class YiYanApi {
     private int refreshTokenSecondTime;
     // 发送请求 webClient
     private final WebClient webClient;
+    // 使用的模型
+    private YiYanChatModel useChatModel;
 
-    public YiYanApi(String appKey, String secretKey, int refreshTokenSecondTime) {
+    public YiYanApi(String appKey, String secretKey, YiYanChatModel useChatModel, int refreshTokenSecondTime) {
         this.appKey = appKey;
         this.secretKey = secretKey;
+        this.useChatModel = useChatModel;
         this.refreshTokenSecondTime = refreshTokenSecondTime;
 
         this.webClient = WebClient.builder()
@@ -71,7 +74,8 @@ public class YiYanApi {
         // TODO: 2024/3/10 小范 这里错误信息返回的结构不一样
 //        {"error_code":17,"error_msg":"Open api daily request limit reached"}
         return this.webClient.post()
-                .uri(uriBuilder -> uriBuilder.path("/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions")
+                .uri(uriBuilder
+                        -> uriBuilder.path(useChatModel.getUri())
                         .queryParam("access_token", token)
                         .build())
                 .body(Mono.just(request), YiYanChatCompletionRequest.class)
@@ -82,7 +86,8 @@ public class YiYanApi {
 
     public Flux<YiYanChatCompletion> chatCompletionStream(YiYanChatCompletionRequest request) {
         return this.webClient.post()
-                .uri(uriBuilder -> uriBuilder.path("/rpc/2.0/ai_custom/v1/wenxinworkshop/chat/completions")
+                .uri(uriBuilder
+                        -> uriBuilder.path(useChatModel.getUri())
                         .queryParam("access_token", token)
                         .build())
                 .body(Mono.just(request), YiYanChatCompletionRequest.class)
